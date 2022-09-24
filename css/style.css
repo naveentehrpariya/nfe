@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Satoshi', sans-serif;
+}
+
+body a:focus,
+body a:hover {
+    color: initial;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
+a:focus {
+    text-decoration: none
+}
+
+.slick-slide:focus,
+a:focus,
+button,
+button:focus,
+select:focus,
+textarea:focus {
+    outline: 0
+}
+
+input {
+    outline: 0 !important
+}
+
+input:focus,
+textarea:focus {
+    outline: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+a img,
+img {
+    border: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    padding: 0;
+    margin: 0
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none
+}
+
+input:-webkit-autofill {
+    border: 1px solid #e4e4e5;
+    -webkit-text-fill-color: #313233;
+    -webkit-box-shadow: 0 0 0 1000px #f5f5f6 inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s
+}
+
+input:-internal-autofill-selected {
+    background-color: #f5f5f6 !important;
+    -webkit-box-shadow: 0 0 0 1000px #f5f5f6 inset
+}
+
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+    border: 1px solid #e4e4e5;
+    -webkit-text-fill-color: #313233;
+    -webkit-box-shadow: 0 0 0 1000px #f5f5f6 inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    opacity: 1;
+    outline: 0
+}
+a:hover {
+    text-decoration: none;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+} 
+#return-to-top,
+#return-to-top i {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background: var(--mc);
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: none;
+    z-index: 9999;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 12px;
+    top: 6px;
+    font-size: 26px;
+}
+#return-to-top p {
+    display: none;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, .9)
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px
+}
+:root {
+    --gr: linear-gradient(94.19deg, #2D0329 0%, #C829B7 100%);
+    --sc: #A3FF12;
+}
+
+/* main csss */
+.text-gr {
+    background: var(--gr);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.heading-sm {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    background: linear-gradient(94.19deg, #FEA8F5 0%, #C829B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.btn {
+    background: linear-gradient(94.19deg, #2D0329 0%, #C829B7 100%);
+    border: 1px solid #FEA8F5;
+    box-shadow: 0px 0px 12px 4px rgba(254, 168, 245, 0.16);
+    border-radius: 5px; color: #fff; padding: 10px 30px;
+}
+
+p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FEA8F5;
+}
+
+body {font-family: 'Space Grotesk', sans-serif;
+    background: #2D0329;
+}
+
+header { padding: 15px 0; background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);}
+    header .container { display: flex;  align-items: center;}
+
+    .bg-none { background:transparent;}
