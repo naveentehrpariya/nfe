@@ -306,6 +306,7 @@ header .container {
 }
 
 section.aboutus {
+<<<<<<< HEAD
     position: relative;
     padding: 60px 0;
 }
@@ -350,3 +351,63 @@ section.aboutus {
 body{ background:url(../img/bg.png) no-repeat center center ; 
 background-size: cover;
 }
+=======
+    position: relative; padding: 60px 0;
+}
+.btn.blog-btn {
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        border: 0;
+        color: #C829B7;
+        line-height: 30px;
+        display: inline-block;
+        margin-top: 20px;
+}
+.blog-box h2{
+    font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 33px;
+
+background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.blog-box h4{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    background: linear-gradient(182deg, #2D0329 0%, #C829B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #00000008;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding-bottom: 20px;
+}
+.blog-box{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+}
+.blog{
+    margin: 60px 0px;
+}
+.blog-box img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.blog-box.bigbox {
+    height: 100%;
+    padding: 30px 20px;
+}
+.blog-box+.blog-box { margin-top: 30px;}
+>>>>>>> 0f729392a0682e29dc1174bb824f27cfdd4109d9
