@@ -4,7 +4,7 @@ html {
     overflow-x: hidden;
 }
 
-body {
+body { transition: 0.5s;
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -156,40 +156,6 @@ a:hover {
     --sc: #A3FF12;
 }
 
-/* main csss */
-.text-gr {
-    background: var(--gr);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
-
-.heading {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 46px;
-    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
-
-.heading-sm {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    background: linear-gradient(94.19deg, #FEA8F5 0%, #C829B7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
 
 .btn {
     background: linear-gradient(94.19deg, #2D0329 0%, #C829B7 100%);
@@ -197,7 +163,7 @@ a:hover {
     box-shadow: 0px 0px 12px 4px rgba(254, 168, 245, 0.16);
     border-radius: 5px;
     color: #fff;
-    padding: 10px 30px;
+    padding: 10px 40px;
 }
 
 p {
@@ -306,14 +272,15 @@ header .container {
 }
 
 section.aboutus {
-<<<<<<< HEAD
     position: relative;
     padding: 60px 0;
 }
-.howWorks {
+
+.howWorks, .ourvilla {
     background: #2D0329;
     padding: 70px 0;
 }
+
 .workBox h2 {
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -327,57 +294,84 @@ section.aboutus {
     text-fill-color: transparent;
     margin-bottom: 20px;
 }
+
 .workBox img {
     max-width: 140px;
     margin-bottom: 20px;
 }
+
 .workBox {
     border-bottom: 3px solid #C829B7;
     padding-bottom: 40px;
 }
+
 .works-row>div:nth-child(odd) {
     margin-top: -80px;
     padding: 0 20px;
 }
-.works-row { margin-top:-80px;}
-.waverow img { width: 100%;}
 
-.ourteam { background:#2D0329; padding:60px 0;}
+.works-row {
+    margin-top: -80px;
+}
 
-.teambox { background: linear-gradient(154.81deg, #2D0329 0%, #C829B7 99.81%);
+.waverow img {
+    width: 100%;
+}
+.copyright p { font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #C829B7;
+    }
+.copyright {  background: #2D0329; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.ourteam, footer {
+    background: #2D0329;
+    padding: 60px 0;
+}
+
+.teambox {
+    background: linear-gradient(154.81deg, #2D0329 0%, #C829B7 99.81%);
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;}
+    border-radius: 10px;
+}
 
-body{ background:url(../img/bg.png) no-repeat center center ; 
-background-size: cover;
+body {
+    background: url(../img/bg.png) no-repeat center center;
+    background-size: cover;
 }
-=======
-    position: relative; padding: 60px 0;
+
+.blog {
+    position: relative;
+    padding: 60px 0;
 }
+
 .btn.blog-btn {
-        box-shadow: none;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 5px;
-        border: 0;
-        color: #C829B7;
-        line-height: 30px;
-        display: inline-block;
-        margin-top: 20px;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border: 0;
+    color: #C829B7;
+    line-height: 30px;
+    display: inline-block;
+    margin-top: 20px;
 }
-.blog-box h2{
-    font-family: 'Space Grotesk';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 33px;
 
-background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+.blog-box h2 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+
+    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
-.blog-box h4{
+
+.blog-box h4 {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 500;
@@ -392,22 +386,479 @@ text-fill-color: transparent;
     text-fill-color: transparent;
     padding-bottom: 20px;
 }
-.blog-box{
+
+.blog-box {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     padding: 20px;
 }
-.blog{
+
+.blog, .token, .cummunity, .contracts {
     margin: 60px 0px;
 }
-.blog-box img{
+
+.blog-box img {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
 .blog-box.bigbox {
     height: 100%;
     padding: 30px 20px;
 }
-.blog-box+.blog-box { margin-top: 30px;}
->>>>>>> 0f729392a0682e29dc1174bb824f27cfdd4109d9
+
+.blog-box+.blog-box {
+    margin-top: 30px;
+}
+
+.bodybg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.3;
+}
+
+
+/* villa  */
+.villa-bx {
+    background: linear-gradient(154.81deg, #C829B7 0%, #8B0C7E 99.81%);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.villa-bx h4 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparet;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.villa-bx img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.villaslider-content .villa-text img {
+    width: 100%;
+    max-width: 14.4px;
+    height: 18px;
+
+}
+
+.wishBox {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 27px;
+    box-shadow: 0 0 15px -6px #000;
+    right: 25px;
+    cursor: pointer;
+}
+
+.villa-bx h4,
+.villa-bx .pPr {
+    padding-left: 10px;
+}
+
+.villa-bx {
+    position: relative;
+}
+
+.pPr img {
+    width: 18px;
+    margin-top: -5px;
+    margin-right: 6px;
+}
+
+.pPr {
+    display: flex;
+    padding: 6px 0;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.villaslider .item { padding: 0 10px;}
+ul.slick-dots li button {
+    background: rgba(112, 192, 201, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    padding: 0 !important;
+}
+
+ul.slick-dots .slick-active button {
+    background: linear-gradient(94.19deg, #2D0329 0%, #C829B7 100%);
+    border-radius: 30px !important;
+    border: transparent !important;
+    width: 33px;
+    min-width: 33px;
+}
+
+ul.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+ul.slick-dots li {
+    margin: 0 10px;
+}
+
+button.slick-arrow {
+    background: url('../img/slickarrow.svg') no-repeat center center;
+    border: 0;
+    font-size: 0;
+    padding: 31px;
+}
+button.slick-next.slick-arrow {
+    transform: rotate(179deg);
+}
+
+button.slick-arrow {
+    position: absolute;
+    top: -109px;
+    right: 0;
+}
+
+button.slick-prev.slick-arrow {
+    right: 70px;
+}
+.btn:hover, .btn:focus {
+    background: linear-gradient(254deg, #2D0329 0%, #C829B7 100%);
+    color: #fff;
+    transition: 0.5s;
+}
+.cm-box {
+    background: linear-gradient(154.81deg, rgba(45, 3, 41, 0.5) 0%, rgba(200, 41, 183, 0.5) 99.81%);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.cm-box a.btn.blog-btn {
+    margin-top: 0 !important;
+}
+.cmIcon {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teambox {
+    padding: 15px;
+}
+
+.teambox {}
+
+.teambox  .coverimg {
+    width: 100%;
+    height: 100%;
+    max-height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.userP {
+    border: 6px solid #85197A;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin-top: -60px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.userP img {
+    width: 100%;
+    height: 100%;
+}
+
+.user-details h2 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+/* identical to box height */
+    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.user-details p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D0329;
+    margin-top: 10px;
+}
+
+a.linkedinbtn {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.userBasic {
+    padding: 13px 20px;
+}
+.con-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.cont-content h2 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.cont-content p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+/* or 162% */
+    color: #FEA8F5;
+}
+
+.conIcon {
+    width: 100%; padding-left: 30px;
+    max-width:150px;
+    display: flex;
+    justify-content: start;
+}
+
+.touch_container h3 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 171px;
+    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.touch_container h4 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+/* identical to box height, or 115% */
+    color: #FEA8F5;
+}
+
+.touch_container {
+    max-width: 780px;
+    padding-bottom: 60px;
+}
+
+.emailField input { 
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400; color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+/* identical to box height */
+    color: #C829B7 !important;
+    background: transparent;
+    border: 0;
+    padding: 15px 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+}
+.emailField input:focus {
+    background: transparent;
+    color: #fff !important;
+}
+span.eiocn {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+/* identical to box height */
+    color: #C829B7;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.emailField {
+    position: relative;
+}
+
+
+.emailField input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: #C829B7 !important;
+  }
+  
+  .emailField input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #C829B7;
+  }
+  
+  .emailField input::-ms-input-placeholder { /* Microsoft Edge */
+color: #C829B7;
+  }
+
+  .section.getIn { padding-top: 40px;}
+  footer h3 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+footer li a {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+/* or 144% */
+    color: #C829B7;
+}
+
+footer li {
+    margin-top: 13px;
+}
+
+footer li a:hover {
+    color: #fff;
+}
+.search-toggle {
+    width: 40px;
+    height: 40px;
+    display: flex; cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.serachbar {
+    border: 1px solid #FEA8F5;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    height: 41px;
+    width: 41px;
+}
+
+.inputBar input:focus { background:transparent; color:#C829B7 !important }
+.inputBar input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    padding: 8px 27px;
+    color: #fff;
+    height: 41px;
+}
+
+.inputBar {
+    width: 0;
+}
+
+
+.serachbar.open {
+    width: 100%;
+    transition: 0.5s;
+    max-width: 280px;
+}
+
+.serachbar.open .inputBar {
+    width: 100%;
+}
+
+.menulist {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    justify-content: end;
+}
+.hero-section { padding: 100px 0;}
+@media ( max-width:1366px){
+    .btn {
+        font-size: 15px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .emailField input {
+        font-size: 18px !important;
+    }
+    
+    footer h3 {
+        font-size: 21px;
+    }
+    
+    footer li a {
+        font-size: 16px;
+    }
+    
+    .copyright p {
+        font-size: 15px;
+    }
+
+    .touch_container h3 {
+        font-size: 99px;
+        line-height: 161px;
+    }
+}
