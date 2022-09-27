@@ -1,4 +1,10 @@
-@charset "utf-8";
+
+:root {
+    --gr: linear-gradient(94.19deg, #70C0C9 0%, #03424A 100%);
+    --sc: #A3FF12;
+    --mc: #021E21;;
+}
+
 
 html {
     overflow-x: hidden;
@@ -151,15 +157,10 @@ a:hover {
     top: 5px
 }
 
-:root {
-    --gr: linear-gradient(94.19deg, #2D0329 0%, #C829B7 100%);
-    --sc: #A3FF12;
-}
-
 
 .btn {
-    background: linear-gradient(94.19deg, #2D0329 0%, #C829B7 100%);
-    border: 1px solid #FEA8F5;
+    background: var(--gr);
+    border: 1px solid #70C0C9;
     box-shadow: 0px 0px 12px 4px rgba(254, 168, 245, 0.16);
     border-radius: 5px;
     color: #fff;
@@ -172,18 +173,21 @@ p {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    color: #FEA8F5;
+    color: #70C0C9;
 }
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background-color: #2D0329 !important;
+    background-color: var(--mc) !important;
 }
 
 header {
     padding: 15px 0;
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 header .container {
@@ -207,7 +211,7 @@ header .container {
     letter-spacing: 0.4em;
     text-transform: uppercase;
 
-    background: linear-gradient(94.19deg, #FEA8F5 0%, #C829B7 100%);
+    background: linear-gradient(94.19deg, #70C0C9 0%, #70C0C9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -223,7 +227,7 @@ header .container {
     font-size: 36px;
     line-height: 46px;
     text-transform: capitalize;
-    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    background: linear-gradient(90deg, #FFE0FC 0%, #70C0C9 92.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -277,7 +281,7 @@ section.aboutus {
 }
 
 .howWorks, .ourvilla {
-    background: #2D0329;
+    background: var(--mc);
     padding: 70px 0;
 }
 
@@ -287,7 +291,7 @@ section.aboutus {
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
-    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    background: linear-gradient(90deg, #FFE0FC 0%, #70C0C9 92.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -301,7 +305,7 @@ section.aboutus {
 }
 
 .workBox {
-    border-bottom: 3px solid #C829B7;
+    border-bottom: 3px solid #70C0C9;
     padding-bottom: 40px;
 }
 
@@ -322,16 +326,16 @@ section.aboutus {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    color: #C829B7;
+    color: #70C0C9;
     }
-.copyright {  background: #2D0329; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.copyright {  background: var(--mc); border-top: 1px solid rgba(255, 255, 255, 0.05); }
 .ourteam, footer {
-    background: #2D0329;
+    background: var(--mc);
     padding: 60px 0;
 }
 
 .teambox {
-    background: linear-gradient(154.81deg, #2D0329 0%, #C829B7 99.81%);
+    background: linear-gradient(154.81deg, rgba(3, 66, 74, 0.5) 0%, rgba(2, 30, 33, 0.5) 99.81%);
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
@@ -351,7 +355,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     border: 0;
-    color: #C829B7;
+    color: #70C0C9;
     line-height: 30px;
     display: inline-block;
     margin-top: 20px;
@@ -364,7 +368,7 @@ body {
     font-size: 26px;
     line-height: 33px;
 
-    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    background: linear-gradient(90deg, #FFE0FC 0%, #70C0C9 92.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -379,7 +383,7 @@ body {
     line-height: 20px;
     letter-spacing: 0.4em;
     text-transform: uppercase;
-    background: linear-gradient(182deg, #2D0329 0%, #C829B7 100%);
+    background: linear-gradient(182deg, var(--mc) 0%, #70C0C9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: #00000008;
     background-clip: text;
@@ -422,7 +426,7 @@ body {
 
 /* villa  */
 .villa-bx {
-    background: linear-gradient(154.81deg, #C829B7 0%, #8B0C7E 99.81%);
+    background: linear-gradient(154.81deg, #03424A 0%, #021E21 99.81%);
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 10px;
@@ -434,7 +438,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
-    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    background: linear-gradient(90deg, #FFE0FC 0%, #70C0C9 92.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -494,7 +498,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #000000;
+    color: #70C0C9;
 }
 
 .villaslider .item { padding: 0 10px;}
@@ -511,7 +515,7 @@ ul.slick-dots li button {
 }
 
 ul.slick-dots .slick-active button {
-    background: linear-gradient(94.19deg, #2D0329 0%, #C829B7 100%);
+    background: var(--gr);
     border-radius: 30px !important;
     border: transparent !important;
     width: 33px;
@@ -549,12 +553,12 @@ button.slick-prev.slick-arrow {
     right: 70px;
 }
 .btn:hover, .btn:focus {
-    background: linear-gradient(254deg, #2D0329 0%, #C829B7 100%);
+    background: linear-gradient(254deg, var(--mc) 0%, #70C0C9 100%);
     color: #fff;
     transition: 0.5s;
 }
 .cm-box {
-    background: linear-gradient(154.81deg, rgba(45, 3, 41, 0.5) 0%, rgba(200, 41, 183, 0.5) 99.81%);
+    background: linear-gradient(154.81deg, rgba(3, 66, 74, 0.5) 0%, rgba(2, 30, 33, 0.5) 99.81%);
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 30px;
@@ -607,7 +611,7 @@ button.slick-prev.slick-arrow {
     font-size: 22px;
     line-height: 28px;
 /* identical to box height */
-    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    background: linear-gradient(90deg, #FFE0FC 0%, #70C0C9 92.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -620,8 +624,8 @@ button.slick-prev.slick-arrow {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #2D0329;
     margin-top: 10px;
+    color: #70C0C9;
 }
 
 a.linkedinbtn {
@@ -633,7 +637,9 @@ a.linkedinbtn {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    color: #70C0C9;
 }
 .userBasic {
     padding: 13px 20px;
@@ -651,7 +657,7 @@ a.linkedinbtn {
     font-weight: 700;
     font-size: 26px;
     line-height: 33px;
-    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    background: linear-gradient(90deg, #FFE0FC 0%, #70C0C9 92.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -665,7 +671,7 @@ a.linkedinbtn {
     font-size: 16px;
     line-height: 26px;
 /* or 162% */
-    color: #FEA8F5;
+    color: #70C0C9;
 }
 
 .conIcon {
@@ -681,7 +687,7 @@ a.linkedinbtn {
     font-weight: 700;
     font-size: 130px;
     line-height: 171px;
-    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    background: linear-gradient(90deg, #FFE0FC 0%, #70C0C9 92.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -695,7 +701,7 @@ a.linkedinbtn {
     font-size: 26px;
     line-height: 30px;
 /* identical to box height, or 115% */
-    color: #FEA8F5;
+    color: #70C0C9;
 }
 
 .touch_container {
@@ -710,7 +716,7 @@ a.linkedinbtn {
     font-size: 20px;
     line-height: 26px;
 /* identical to box height */
-    color: #C829B7 !important;
+    color: #70C0C9 !important;
     background: transparent;
     border: 0;
     padding: 15px 0 !important;
@@ -728,7 +734,7 @@ span.eiocn {
     font-size: 32px;
     line-height: 36px;
 /* identical to box height */
-    color: #C829B7;
+    color: #70C0C9;
     position: absolute;
     right: 0;
     top: 0;
@@ -740,15 +746,15 @@ span.eiocn {
 
 
 .emailField input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-color: #C829B7 !important;
+color: #70C0C9 !important;
   }
   
   .emailField input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-color: #C829B7;
+color: #70C0C9;
   }
   
   .emailField input::-ms-input-placeholder { /* Microsoft Edge */
-color: #C829B7;
+color: #70C0C9;
   }
 
   .section.getIn { padding-top: 40px;}
@@ -758,7 +764,7 @@ color: #C829B7;
     font-weight: 700;
     font-size: 28px;
     line-height: 35px;
-    background: linear-gradient(90deg, #FFE0FC 0%, #FEA8F5 92.32%);
+    background: linear-gradient(90deg, #FFE0FC 0%, #70C0C9 92.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -772,7 +778,7 @@ footer li a {
     font-size: 17px;
     line-height: 26px;
 /* or 144% */
-    color: #C829B7;
+    color: #70C0C9;
 }
 
 footer li {
@@ -791,7 +797,7 @@ footer li a:hover {
 }
 
 .serachbar {
-    border: 1px solid #FEA8F5;
+    border: 1px solid #70C0C9;
     border-radius: 30px;
     display: flex;
     overflow: hidden;
@@ -799,7 +805,7 @@ footer li a:hover {
     width: 41px;
 }
 
-.inputBar input:focus { background:transparent; color:#C829B7 !important }
+.inputBar input:focus { background:transparent; color:#70C0C9 !important }
 .inputBar input {
     width: 100%;
     background: transparent;
