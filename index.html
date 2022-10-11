@@ -545,6 +545,14 @@
         <p>Copyright 2022</p>
     </div>
 
+    <div class="loaderOuter">
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -557,6 +565,10 @@
         AOS.init({
         once: false, // whether animation should happen only once - while scrolling down
         });
+        setTimeout(()=>{
+            $(".loaderOuter").addClass("hide");
+        }, 3000);
+
       </script>
     <script>
         $('.search-toggle').click(function(){
